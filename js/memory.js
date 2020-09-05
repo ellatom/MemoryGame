@@ -115,37 +115,37 @@ function compareCards() {
 //Fisher-Yates
 function randomizeImages(images) {
 
-    // let currentIndex = images.length, temporaryValue, randomIndex;
+    let currentIndex = images.length, temporaryValue, randomIndex;
 
-    // // While there remain elements to shuffle...
-    // while (0 !== currentIndex) {
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
 
         savePlayertoBoardScore    //   // Pick a remaining element...
-    //   randomIndex = Math.floor(Math.random() * currentIndex);
-    //   currentIndex -= 1;
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
 
-    //   // And swap it with the current element.
-    //   temporaryValue = images[currentIndex];
-    //   images[currentIndex] = images[randomIndex];
-    //   images[randomIndex] = temporaryValue;
-    // }
+      // And swap it with the current element.
+      temporaryValue = images[currentIndex];
+      images[currentIndex] = images[randomIndex];
+      images[randomIndex] = temporaryValue;
+    }
 
-    // return images;
+    return images;
     //testing
-    return [
-        "images/bear.jpeg",
-        "images/bird.jpeg",
-        "images/bunny.jpeg",
-        "images/dog.jpeg",
-        "images/kooala.jpeg",
-        "images/monkey.jpeg",
-        "images/bear.jpeg",
-        "images/bird.jpeg",
-        "images/bunny.jpeg",
-        "images/dog.jpeg",
-        "images/kooala.jpeg",
-        "images/monkey.jpeg",
-    ];
+//     return [
+//         "images/bear.jpeg",
+//         "images/bird.jpeg",
+//         "images/bunny.jpeg",
+//         "images/dog.jpeg",
+//         "images/kooala.jpeg",
+//         "images/monkey.jpeg",
+//         "images/bear.jpeg",
+//         "images/bird.jpeg",
+//         "images/bunny.jpeg",
+//         "images/dog.jpeg",
+//         "images/kooala.jpeg",
+//         "images/monkey.jpeg",
+//     ];
 }
 
 placeCards(randomizeImages(images), cards = cards);
