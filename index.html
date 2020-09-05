@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory</title>
+    <link rel="stylesheet" href="css/memory.css" />
+    <link rel="stylesheet" href="css/norm.css" />
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div id="overlay">
+        <input autofocus type="text" placeholder="Type your name" class="input"/>
+        <button class="addToBoardScoreBtn" onclick="savePlayertoBoardScore(this)">Check are you one of 3 best in board score</button>
+        <div id="text">You win!!!</div>
+        <p>Board Score (Best 3 Players)</p>
+        <div class="boardScore">
+          <table>
+            <thead>
+              <th>#</th>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Moves</th>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <button class="wonStartNewGame">Start New Game</button>
+      </div>
+      <div class="topNav">
+        <h4>Memory Game</h4>
+        <div class="panel">
+          <h3>
+            Timer:
+            <div class="clock"></div>
+          </h3>
+          <h3>
+            wrong guess:
+            <div class="wrongGuess">0</div>
+          </h3>
+          <button class="startNewGame">Start New Game</button>
+        </div>
+      </div>
+      <div class="flexContainer"></div>
+    </main>
+    <script src="js/memory.js"></script>
+  </body>
+</html>

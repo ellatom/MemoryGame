@@ -1,0 +1,253 @@
+
+      :root{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+    }
+    body{
+      background: lemonchiffon;
+    }
+    .topNav{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    main{
+      max-width: 688px;
+      align-items: center;
+      margin: 0 auto;
+    }
+    
+    h4{
+      text-align: center;
+      color:grey;
+      font-size:2rem;
+      
+    }
+    h3{
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+    .wrongGuess{
+      text-align: center;
+    }
+    .startNewGame
+    {
+      height: 41px;
+      margin-top: 19px;
+      margin-left: 20px;
+      padding:10px;
+      align-items: flex-end;
+    }
+    h2{
+      color:black;
+      font-size:1.6rem;
+    }
+    .panel{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .flexContainer {
+      display: flex;
+      flex-wrap: wrap; 
+      height:50vh;
+    }
+
+    /* card flipping */
+    .flipCard {
+      background-color: transparent;
+      flex: 1 1 30%;
+      height: 150px;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin:10px;
+    }
+
+    .flipCardInner { /*flipper*/
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .flipCard .flipCardBack {
+      background: #3498db;
+      transform: rotateY(180deg);
+     }
+
+    .flipCardFront,
+    .flipCardBack {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+    }
+
+    .flipCardFront{
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flipCardBack{
+      background-color: dodgerblue;
+      color: white;
+    }
+    .on {
+      transform: rotateY(-180deg);
+    }
+
+    .off {
+      transform: rotateY(0deg);
+    }
+    /* overlay win screen */
+    #overlay {
+      position: fixed; /* Sit on top of the page content */
+      display: none; /* Hidden(none) by default */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(200, 211, 150, 200); 
+      z-index: 2; 
+      cursor: pointer; 
+    }
+    input[type="text"] {
+      width: 45%;
+      align-items: center;
+      padding: 10px;
+      border-radius: 4px;
+      border: 3px solid #333;
+      position: absolute;
+      top: 17%;
+      left: 50%;
+      font-size: 20px;
+      color: black;
+      transform: translate(-50%,-50%);
+    }
+    .addToBoardScoreBtn{
+      width: 34%;
+      align-items: center;
+      padding: 10px;
+      border-radius: 4px;
+      border: 3px solid #333;
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      font-size: 20px;
+      color: black;
+      transform: translate(-50%,-50%);
+    }
+    .addToBoardScoreBtn:hover{
+      cursor: pointer;
+    }
+    #text{
+      position: absolute;
+      top: 7%;
+      left: 50%;
+      font-size: 30px;
+      color: black;
+      transform: translate(-50%,-50%);
+    }
+    .wonStartNewGame
+    {
+      position: absolute;
+      top: 93%;
+      left: 50%;
+      font-size: 1rem;
+      color: white;
+      transform: translate(-50%,-50%);
+      border-radius: 6px;
+      padding:40px;
+      background-color: rgba(20, 20, 22, 0.5); 
+      z-index: 5;
+    }
+    .wonStartNewGame :hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    p{
+      display: none;
+      position: absolute;
+      top: 48%;
+      left: 64%;
+      font-size: 32rem;
+      color: black;
+      transform: translate(-50%,-50%);
+      border-radius: 6px;
+      padding: 20px;
+      font-size: 2rem;
+      width: 60%;
+      font-weight: bold;
+    }
+    .boardScore{
+      display: block;
+      position: absolute;
+      top: 65%;
+      left: 73%;
+      font-size: 1rem;
+      color: black;
+      transform: translate(-50%,-50%);
+      border-radius: 6px;
+      padding: 40px;
+      border-collapse: collapse;
+      width: 90%;
+    }
+
+    table td, table th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    
+    /* table tr:nth-child(even){background-color: black}
+    
+    table tr:hover {background-color: black} */
+    
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    @media screen and (max-width: 452px) {
+        .flipCard {
+        background-color: transparent;
+        flex: 1 1 20%;
+        height: 10vh;
+        }
+        .startNewGame{
+          padding-left: 8px;
+          height: 69px;
+          margin: 17px;
+        }
+        h3{
+          text-align: center;
+        }
+        p{
+          top: 36%;
+          left: 50%;
+          font-size: 1rem;
+        }
+        input[type="text"] {
+          width:75%;
+          font-size:1rem;
+        }
+
+        .addToBoardScoreBtn{
+          font-size:1rem;
+          width:67%;
+        }
+        .wonStartNewGame
+        {
+          padding:20px;
+        }
+        .boardScore{
+          width:89%;
+          left:51%;
+        }
+    }
