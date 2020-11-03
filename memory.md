@@ -16,4 +16,6 @@ than others.
 
 <p>Click on start game button on main page will start a new game , all cards are re-shuffled and new game begin.</p>
 
+![](images/memorygame2.png) 
+
 
