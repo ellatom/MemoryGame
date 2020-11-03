@@ -1,5 +1,7 @@
 <h3>Memory Game</h3>
 <ul>
+<li> Go to the following link to play :https://youthful-panini-7326ae.netlify.app/ br>
+<li>Instructions:<br>
 <li>The time starts to run from the moment the game is running.<br>
 <li>Each time 2 cards should be flipped.<br>
 <li>After card flipped, flip back can't be done.<br>
