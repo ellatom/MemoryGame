@@ -8,9 +8,12 @@
 <li>It the cards aren't identical, they are flipped back.<br>
 <li>The winner with best score is the one which flipped all cards, with less wrong guess
 than others.
+  <li>After all cards flipped, an overlay screen appears with scoreboard. 
+<li>The winner can check in scoreboard if he was added. The score of the best 3 players will appear.<li>
+</p>Best player is the one who done less moves.
 </ul>
-<p>Click on start game button on main page will start a new game , all cards are shuffled again in new game.</p>
 
-<p>After all cards flipped an overlay screen appears with won text and the winner can check in scoreboard if he added.
-  if he has less moves than other players before (3 of them) he will be added to board score.
-</p>
+
+<p>Click on start game button on main page will start a new game , all cards are re-shuffled and new game begin.</p>
+
+
